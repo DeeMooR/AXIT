@@ -31,7 +31,7 @@ h3 {
 /*--------------- TABS ---------------*/
 
 .tab__container {
-    padding: 99px 0 50px 0;
+    padding: 99px 0 0 0;
     border: 2px solid coral;
 }
 .tab__header {
@@ -107,7 +107,7 @@ h3 {
 /*--------------- AWESOME ---------------*/
 
 .awesome__container {
-    padding: 0 0 58px 0;
+    padding: 50px 0 58px 0;
     border: 2px solid cornflowerblue;
 }
 
@@ -219,4 +219,73 @@ h3 {
     color: #86878B;
     background-color: #fff;
     border: 2px solid #F5F5F5;
+}
+
+
+/*--------------- REVIEWS ---------------*/
+
+.reviews__container {
+    padding: 50px 0 64px 0;
+    border: 2px solid teal;
+}
+.reviews__row {
+    display: flex;
+    justify-content: space-between;
+    margin: 83px 0 0 0;
+}
+.reviews__column {
+    flex: 0 1 calc(370/1170*100%);
+}
+
+.item-reviews {
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+}
+.item-reviews__message {
+    position: relative;
+    padding: 37px 20px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+    background: #E2E2E2;
+    border-radius: 10px;
+}
+.item-reviews__message:after {
+    content: '';
+    position: absolute;
+    left: 70px; 
+    bottom: -20px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #E2E2E2;
+   }
+.item-reviews__person {
+    margin: 66px 0 0 0;
+}
+.person-reviews {
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+}
+.person-reviews__photo {
+    flex: 0 1 calc(70/370*100%);
+}
+.person-reviews__characteristic {
+    flex: 0 1 calc(270/370*100%);
+}
+.person-reviews__name {
+    padding: 10px 0;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+}
+.person-reviews__post {
+    margin: 15px 0 0 0;
+    font-family: 'Raleway';
+    font-size: 18px;
+    line-height: 21px;
 }
