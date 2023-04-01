@@ -289,3 +289,40 @@ h3 {
     font-size: 18px;
     line-height: 21px;
 }
+
+
+/*--------------- PICTURE ---------------*/
+
+.picture__container {
+    padding: 50px 0 50px 0;
+    border: 2px solid turquoise;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/picture.png');
+    background-size: auto, 100% 100%;
+}
+.picture__container h2,
+.picture__container h3 {
+    color: #fff;
+}
+.picture__container .block-header__line {
+    background-color: #fff;
+}
+.picture__download {
+    margin: 73px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+.picture__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 58px;
+    
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #fff;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+}
