@@ -398,3 +398,26 @@ h3 {
     color: #fff;
     background: #EC7979;
 }
+
+
+/*--------------- FOOTER ---------------*/
+
+footer {
+    padding: 35px 0 27px 0;
+    background-color: #000;
+}
+.footer_list {
+    display: flex;
+    justify-content: center;
+}
+.footer_list a:nth-child(even) {
+    padding: 0 33px;
+}
+.footer_text {
+    padding: 28px 0 0 0;
+    font-family: 'Raleway';
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
