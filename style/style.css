@@ -490,7 +490,7 @@ h1 {
     padding: 50px 0 50px 0;
 }
 .picture__container h2,
-.picture__container h3 {
+.picture__container .block-header__text {
     color: #fff;
 }
 .picture__container .block-header__line {
