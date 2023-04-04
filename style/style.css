@@ -76,6 +76,7 @@ header {
     padding: 283px 0 183px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     max-width: 1170px;
     box-sizing: content-box;
 }
@@ -175,11 +176,53 @@ h1 {
 }
 
 
+/*--------------- MEDIA ---------------*/
+
+.media {
+    background: #F8EFEF;
+}
+.media__row {
+    display: flex;
+    justify-content: space-between;
+}
+.media-left {
+    flex: 0 1 calc(470/1170*100%);
+}
+.media-left__title {
+    padding: 14px 0 31px 0;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #333;
+}
+.media-left__text {
+    padding: 0 0 18px 0;
+    font-family: 'Raleway';
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+}
+.media-right {
+    padding: 35px 0 0 0;
+    flex: 0 1 calc(670/1170*100%);
+}
+.media-right__list {
+    display: flex;
+    justify-content: space-between;
+}
+.media-right__list a {
+    flex: 0 1 calc(70/670*100%);
+}
+.media-right__list img {
+    width: 100%;
+}
+
+
 /*--------------- TABS ---------------*/
 
 .tab__container {
     padding: 99px 0 0 0;
-    border: 2px solid coral;
 }
 .tab__header {
     display: flex;
@@ -255,7 +298,6 @@ h1 {
 
 .awesome__container {
     padding: 50px 0 58px 0;
-    border: 2px solid cornflowerblue;
 }
 
 .awesome__row {
@@ -301,10 +343,11 @@ h1 {
 
 /*--------------- PRICING ---------------*/
 
+.pricing {
+    background: #F5F5F5;
+}
 .pricing__container {
     padding: 50px 0 50px 0;
-    border: 2px solid goldenrod;
-    background: #F5F5F5;
 }
 .pricing__row {
     display: flex;
@@ -373,7 +416,6 @@ h1 {
 
 .reviews__container {
     padding: 50px 0 64px 0;
-    border: 2px solid teal;
 }
 .reviews__row {
     display: flex;
@@ -442,7 +484,6 @@ h1 {
 
 .picture__container {
     padding: 50px 0 50px 0;
-    border: 2px solid turquoise;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/picture.png');
     background-size: auto, 100% 100%;
 }
@@ -479,7 +520,6 @@ h1 {
 
 .contact__container {
     padding: 50px 0 50px 0;
-    border: 2px solid darkgoldenrod;
 }
 .contact__row {
     display: flex;
