@@ -13,10 +13,10 @@
 <body>
     <header>
         <div class="header__container">
-            <div class="header__logo">
+            <figure class="header__logo">
                 <img src="./img/icon/AX.svg" alt="AX">
                 <img src="./img/icon/IT.svg" alt="IT">
-            </div>
+            </figure>
             <nav class="header__list">
                 <a class="header__item" href="#">Features</a>
                 <a class="header__item" href="#">About</a>
@@ -26,42 +26,41 @@
             </nav>
         </div>
     </header>
+
     <main>
     <section class="home">
         <div class="home__container">
             <div class="home__row">
-                <div class="home__column left-home">
-                    <div class="left-home__logo">
+                <article class="home__column left-home">
+                    <figure class="left-home__logo">
                         <img src="./img/icon/AX.svg" alt="AX">
                         <img src="./img/icon/IT.svg" alt="IT">
-                    </div>
+                    </figure>
                     <h1>MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
-                    <div class="left-home__line"></div>
+                    <hr class="left-home__line"></hr>
                     <div class="left-home__text">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit</div>
                     <button class="left-home__button button white-button">Download</button>
-                </div>
-                <div class="home__column right-home">
-                    <form action="#">
-                        <div class="right-home__white-block">
-                            <p class="right-home__title">TRY YOUR <span>FREE</span> TRIAL TODAY</p>
-                            <input class="right-home__name" type="text" name="data" placeholder="Name" maxlength="20">
-                            <input class="right-home__email" type="email" name="data" placeholder="Email" maxlength="20">
-                            <input class="right-home__password" type="password" name="data" placeholder="Password" maxlength="20">
-                        </div>
-                        <button class="right-home__button button">Get Started</button>
-                    </form>
-                </div>
+                </article>
+                <form class="home__column right-home" action="#">
+                    <div class="right-home__white-block">
+                        <p class="right-home__title">TRY YOUR <span>FREE</span> TRIAL TODAY</p>
+                        <input class="right-home__name" type="text" name="data" placeholder="Name" maxlength="20">
+                        <input class="right-home__email" type="email" name="data" placeholder="Email" maxlength="20">
+                        <input class="right-home__password" type="password" name="data" placeholder="Password" maxlength="20">
+                    </div>
+                    <button class="right-home__button button">Get Started</button>
+                </form>
             </div>
         </div>
     </section>
     <section class="media">
         <div class="media__container container">
             <div class="media__row">
-                <div class="media__column media-left">
-                    <p class="media-left__title">Social Media</p>
+                <article class="media__column media-left">
+                    <h4 class="media-left__title">Social Media</h4>
                     <p class="media-left__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Aenean euismod bibendum laoreet.</p>
-                </div>
+                </article>
                 <div class="media__column media-right">
                     <ul class="media-right__list">
                         <a href="#"><img src="./img/icon/facebook.svg" alt="facebook"></a>
@@ -78,192 +77,174 @@
     </section>
     <section class="tab">
         <div class="tab__container container">
-            <nav class="tab__header">
+            <ul class="tab__header">
                 <a href="#" class="tab__choice tab__choice-active">TAB 1</a>
                 <a href="#" class="tab__choice">TAB 2</a>
                 <a href="#" class="tab__choice">TAB 3</a>
-                <div href="#" class="tab__choice"></div>
-            </nav>
+                <div class="tab__choice"></div>
+            </ul>
             <div class="tab__main">
                 <article class="tab__article tab-article">
-                    <div class="tab-article__title">Tabs with soft transitioning effect.</div>
+                    <h3 class="tab-article__title">Tabs with soft transitioning effect.</h3>
                     <p class="tab-article__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod<br> 
                         bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra<br> 
                         justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque<br> 
-                        penatibus et magnis dis parturient montes.
-                        <br><br>
+                        penatibus et magnis dis parturient montes.<br>
+                        <br>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod<br> 
                         bibendum laoreet.
                     </p>
                     <button class="tab-article__button button">Download</button>
                 </article>
-                <aside class="tab__aside tab-aside">
+                <figure class="tab__aside tab-aside">
                     <img src="./img/tab.png" alt="Statue of Liberty" class="tab-aside__img">
-                </aside>
+                </figure>
             </div>
         </div>
     </section>
     <section class="awesome">
         <div class="awesome__container container">
-            <div class="block-header">
+            <article class="block-header">
                 <h2>WHY THIS IS AWESOME</h2>
-                <div class="block-header__line"></div>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-            </div>
+                <hr class="block-header__line"></hr>
+                <p class="block-header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </article>
             <div class="awesome__row">
-                <div class="awesome__column">
-                    <div class="item-awesome">
-                        <div class="item-awesome__icon">
-                            <img src="./img/icon/awesome_1.png" alt="">
-                        </div>
-                        <div class="item-awesome__title">Thoughtful Design</div>
-                        <div class="item-awesome__text">Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus<br>accumsan et viverra.</div>
-                    </div>
-                </div>
-                <div class="awesome__column">
-                    <div class="item-awesome">
-                        <div class="item-awesome__icon">
-                            <img src="./img/icon/awesome_2.png" alt="">
-                        </div>
-                        <div class="item-awesome__title">Thoughtful Design</div>
-                        <div class="item-awesome__text">Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus<br>accumsan et viverra.</div>
-                    </div>
-                </div>
-                <div class="awesome__column">
-                    <div class="item-awesome">
-                        <div class="item-awesome__icon awesome__icon-3">
-                            <img src="./img/icon/awesome_3.png" alt="">
-                        </div>
-                        <div class="item-awesome__title">Thoughtful Design</div>
-                        <div class="item-awesome__text">Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus<br>accumsan et viverra.</div>
-                    </div>
-                </div>
+                <aside class="awesome__column item-awesome">
+                    <figure class="item-awesome__icon">
+                        <img src="./img/icon/awesome_1.svg" alt="">
+                    </figure>
+                    <h4 class="item-awesome__title">Thoughtful Design</h4>
+                    <p class="item-awesome__text">Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus<br>accumsan et viverra.</p>
+                </aside>
+                <aside class="awesome__column item-awesome">
+                    <figure class="item-awesome__icon">
+                        <img src="./img/icon/awesome_2.svg" alt="">
+                    </figure>
+                    <h4 class="item-awesome__title">Thoughtful Design</h4>
+                    <p class="item-awesome__text">Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus<br>accumsan et viverra.</p>
+                </aside>
+                <aside class="awesome__column item-awesome">
+                    <figure class="item-awesome__icon awesome__icon-3">
+                        <img src="./img/icon/awesome_3.svg" alt="">
+                    </figure>
+                    <h4 class="item-awesome__title">Thoughtful Design</h4>
+                    <p class="item-awesome__text">Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus<br>accumsan et viverra.</p>
+                </aside>
             </div>
         </div>
     </section>
     <section class="pricing">
         <div class="pricing__container container">
-            <div class="block-header">
+            <article class="block-header">
                 <h2>PRICING OPTIONS</h2>
-                <div class="block-header__line"></div>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-            </div>
+                <hr class="block-header__line"></hr>
+                <p class="block-header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </article>
             <div class="pricing__row">
-                <div class="pricing__column">
-                    <div class="item-pricing">
-                        <div class="item-pricing__title">Basic</div>
-                        <div class="item-pricing__price">$10</div>
-                        <div class="item-pricing__text">Free for life</div>
-                        <ul class="item-pricing__list">
-                            <li>1 Gb Of Space</li>
-                            <li>1 Gb Of Space</li>
-                            <li>1 Gb Of Space</li>
-                            <li>1 Gb Of Space</li>
-                            <li>1 Gb Of Space</li>
-                            <li>1 Gb Of Space</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="pricing__column">
-                    <div class="item-pricing">
-                        <div class="item-pricing__title">Optima</div>
-                        <div class="item-pricing__price">$20</div>
-                        <div class="item-pricing__text">Free for life</div>
-                        <ul class="item-pricing__list">
-                            <li>1 Gb Of Space</li>
-                            <li>1 Gb Of Space</li>
-                            <li>1 Gb Of Space</li>
-                            <li>1 Gb Of Space</li>
-                            <li>1 Gb Of Space</li>
-                            <li>1 Gb Of Space</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="pricing__column">
-                    <div class="item-pricing">
-                        <div class="item-pricing__title">Pro</div>
-                        <div class="item-pricing__price">$30</div>
-                        <div class="item-pricing__text">Free for life</div>
-                        <ul class="item-pricing__list">
-                            <li>1 Gb Of Space</li>
-                            <li>1 Gb Of Space</li>
-                            <li>1 Gb Of Space</li>
-                            <li>1 Gb Of Space</li>
-                            <li>1 Gb Of Space</li>
-                            <li>1 Gb Of Space</li>
-                        </ul>
-                    </div>
-                </div>
+                <aside class="pricing__column item-pricing">
+                    <h4 class="item-pricing__title">Basic</h4>
+                    <p class="item-pricing__price">$10</p>
+                    <h5 class="item-pricing__text">Free for life</h5>
+                    <ul class="item-pricing__list">
+                        <li>1 Gb Of Space</li>
+                        <li>1 Gb Of Space</li>
+                        <li>1 Gb Of Space</li>
+                        <li>1 Gb Of Space</li>
+                        <li>1 Gb Of Space</li>
+                        <li>1 Gb Of Space</li>
+                    </ul>
+                </aside>
+                <aside class="pricing__column item-pricing">
+                    <h4 class="item-pricing__title">Optima</h4>
+                    <p class="item-pricing__price">$20</p>
+                    <h5 class="item-pricing__text">Free for life</h5>
+                    <ul class="item-pricing__list">
+                        <li>1 Gb Of Space</li>
+                        <li>1 Gb Of Space</li>
+                        <li>1 Gb Of Space</li>
+                        <li>1 Gb Of Space</li>
+                        <li>1 Gb Of Space</li>
+                        <li>1 Gb Of Space</li>
+                    </ul>
+                </aside>
+                <aside class="pricing__column item-pricing">
+                    <h4 class="item-pricing__title">Pro</h4>
+                    <p class="item-pricing__price">$30</p>
+                    <h5 class="item-pricing__text">Free for life</h5>
+                    <ul class="item-pricing__list">
+                        <li>1 Gb Of Space</li>
+                        <li>1 Gb Of Space</li>
+                        <li>1 Gb Of Space</li>
+                        <li>1 Gb Of Space</li>
+                        <li>1 Gb Of Space</li>
+                        <li>1 Gb Of Space</li>
+                    </ul>
+                </aside>
             </div>
         </div>
     </section>
     <section class="reviews">
         <div class="reviews__container container">
-            <div class="block-header">
+            <article class="block-header">
                 <h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
-                <div class="block-header__line"></div>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-            </div>
+                <hr class="block-header__line"></hr>
+                <p class="block-header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </article>
             <div class="reviews__row">
-                <div class="reviews__column">
-                    <div class="item-reviews">
-                       <div class="item-reviews__message">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
+                <article class="reviews__column item-reviews">
+                    <p class="item-reviews__message">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
+                    </p>
+                    <aside class="item-reviews__person person-reviews">
+                        <figure class="person-reviews__photo">
+                            <img src="./img/person_1.png" alt="person_1">
+                        </figure>
+                        <div class="person-reviews__characteristic">
+                            <h4 class="person-reviews__name">Davis Rhiel Madsen</h4>
+                            <h5 class="person-reviews__post">Manager</h5>
                         </div>
-                        <div class="item-reviews__person person-reviews">
-                            <div class="person-reviews__photo">
-                                <img src="./img/person_1.png" alt="person_1">
-                            </div>
-                            <div class="person-reviews__characteristic">
-                                <div class="person-reviews__name">Davis Rhiel Madsen</div>
-                                <div class="person-reviews__post">Manager</div>
-                            </div>
+                    </aside>
+                </article>
+                <article class="reviews__column item-reviews">
+                    <p class="item-reviews__message">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
+                    </p>
+                    <aside class="item-reviews__person person-reviews">
+                        <figure class="person-reviews__photo">
+                            <img src="./img/person_2.png" alt="person_2">
+                        </figure>
+                        <div class="person-reviews__characteristic">
+                            <h4 class="person-reviews__name">Jaydon Rosser</h4>
+                            <h5 class="person-reviews__post">Manager</h5>
                         </div>
-                    </div>
-                </div>
-                <div class="reviews__column">
-                    <div class="item-reviews">
-                        <div class="item-reviews__message">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
+                    </aside>
+                </article>
+                <article class="reviews__column item-reviews">
+                    <p class="item-reviews__message">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
+                    </p>
+                    <aside class="item-reviews__person person-reviews">
+                        <figure class="person-reviews__photo">
+                            <img src="./img/person_3.png" alt="person_3">
+                        </figure>
+                        <div class="person-reviews__characteristic">
+                            <h4 class="person-reviews__name">Cooper Dorwart</h4>
+                            <h5 class="person-reviews__post">Manager</h5>
                         </div>
-                        <div class="item-reviews__person person-reviews">
-                            <div class="person-reviews__photo">
-                                <img src="./img/person_2.png" alt="person_2">
-                            </div>
-                            <div class="person-reviews__characteristic">
-                                <div class="person-reviews__name">Jaydon Rosser</div>
-                                <div class="person-reviews__post">Manager</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="reviews__column">
-                    <div class="item-reviews">
-                        <div class="item-reviews__message">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
-                        </div>
-                        <div class="item-reviews__person person-reviews">
-                            <div class="person-reviews__photo">
-                                <img src="./img/person_3.png" alt="person_3">
-                            </div>
-                            <div class="person-reviews__characteristic">
-                                <div class="person-reviews__name">Cooper Dorwart</div>
-                                <div class="person-reviews__post">Manager</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    </aside>
+                </article>
             </div>
         </div>
     </section>
     <section class="picture">
         <div class="picture__container container">
-            <div class="block-header">
+            <article class="block-header">
                 <h2>STYLISH AXURE DESIGN</h2>
-                <div class="block-header__line"></div>
-                <h3>Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</h3>
-            </div>
+                <hr class="block-header__line"></hr>
+                <p class="block-header__text">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+            </article>
             <div class="picture__download">
                 <button class="button white-button">Download</button>
             </div>
@@ -271,25 +252,20 @@
     </section>
     <section class="contact">
         <div class="contact__container container">
-            <div class="block-header">
+            <article class="block-header">
                 <h2>CONTACT US</h2>
-                <div class="block-header__line"></div>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-            </div>
+                <hr class="block-header__line"></hr>
+                <p class="block-header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </article>
             <div class="contact__row">
-                <div class="contact__column">
-                    <div class="contact__left left-contact">
-                        <input class="left-contact__name" type="text" name="data" placeholder="Name" maxlength="20">
-                        <input class="left-contact__email" type="email" name="data" placeholder="Email" maxlength="30">
-                        <input class="left-contact__password" type="password" name="data" placeholder="Password" maxlength="30">
-                    </div>
-                </div>
-                <div class="contact__column">
-                    <div class="contact__right right-contact">
-                        <textarea class="right-contact__message" name="data" placeholder="Message"></textarea>
-                        <div class="right-contact__line"></div>
-                    </div>
-                </div>
+                <form class="contact__column left-contact">
+                    <input class="left-contact__name" type="text" name="data" placeholder="Name" maxlength="20">
+                    <input class="left-contact__email" type="email" name="data" placeholder="Email" maxlength="30">
+                    <input class="left-contact__password" type="password" name="data" placeholder="Password" maxlength="30">
+                </form>
+                <form class="contact__column right-contact">
+                    <textarea class="right-contact__message" name="data" placeholder="Message"></textarea>
+                </form>
             </div>
             <div class="contact__send">
                 <button class="button">Send Message</button>
@@ -297,6 +273,7 @@
         </div>
     </section>
     </main>
+
     <footer>
         <ul class="footer__list">
             <a href="#"><img src="./img/icon/facebook.svg" alt="facebook"></a>
@@ -307,7 +284,7 @@
             <a href="#"><img src="./img/icon/github.svg" alt="github"></a>
             <a href="#"><img src="./img/icon/net.svg" alt="net"></a>
         </ul>
-        <div class="footer__text">© 2015 Axure Themes</div>
+        <p class="footer__text">© 2015 Axure Themes</p>
     </footer>
 </body>
 </html>
