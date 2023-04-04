@@ -82,7 +82,7 @@
                 <a href="#" class="tab__choice tab__choice-active">TAB 1</a>
                 <a href="#" class="tab__choice">TAB 2</a>
                 <a href="#" class="tab__choice">TAB 3</a>
-                <a href="#" class="tab__choice"></a>
+                <div href="#" class="tab__choice"></div>
             </nav>
             <div class="tab__main">
                 <article class="tab__article tab-article">
@@ -279,17 +279,14 @@
             <div class="contact__row">
                 <div class="contact__column">
                     <div class="contact__left left-contact">
-                        <input class="left-contact__name" type="text" name="name" placeholder="Name" maxlength="20">
-                        <div class="left-contact__line"></div>
-                        <input class="left-contact__email" type="email" name="email" placeholder="Email" maxlength="30">
-                        <div class="left-contact__line"></div>
-                        <input class="left-contact__password" type="password" name="password" placeholder="Password" maxlength="30">
-                        <div class="left-contact__line"></div>
+                        <input class="left-contact__name" type="text" name="data" placeholder="Name" maxlength="20">
+                        <input class="left-contact__email" type="email" name="data" placeholder="Email" maxlength="30">
+                        <input class="left-contact__password" type="password" name="data" placeholder="Password" maxlength="30">
                     </div>
                 </div>
                 <div class="contact__column">
                     <div class="contact__right right-contact">
-                        <textarea class="right-contact__message" name="message" placeholder="Message"></textarea>
+                        <textarea class="right-contact__message" name="data" placeholder="Message"></textarea>
                         <div class="right-contact__line"></div>
                     </div>
                 </div>
@@ -301,7 +298,7 @@
     </section>
     </main>
     <footer>
-        <div class="footer_list">
+        <ul class="footer__list">
             <a href="#"><img src="./img/icon/facebook.svg" alt="facebook"></a>
             <a href="#"><img src="./img/icon/twitter.svg" alt="twitter"></a>
             <a href="#"><img src="./img/icon/linkedin.svg" alt="linkedin"></a>
@@ -309,8 +306,8 @@
             <a href="#"><img src="./img/icon/instagram.svg" alt="instagram"></a>
             <a href="#"><img src="./img/icon/github.svg" alt="github"></a>
             <a href="#"><img src="./img/icon/net.svg" alt="net"></a>
-        </div>
-        <div class="footer_text">© 2015 Axure Themes</div>
+        </ul>
+        <div class="footer__text">© 2015 Axure Themes</div>
     </footer>
 </body>
 </html>
