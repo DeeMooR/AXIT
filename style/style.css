@@ -49,7 +49,7 @@ h2 {
         width: 134px;
     }
     .block-header__text {
-        margin: 25px auto 0;
+        margin: 24px auto 0;
         font-size: 13px;
         line-height: 15px;
     }
@@ -71,6 +71,17 @@ h5 {
     h4 {
         font-size: 18px;
         line-height: 25px;
+    }
+    h5 {
+        font-family: 'Raleway';
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+@media (max-width: 479.98px) {
+    h5 {
+        font-size: 14px;
+        line-height: 15px;
     }
 }
 
@@ -997,12 +1008,6 @@ h1 {
 .reviews__column {
     flex: 0 1 calc(370/1170*100%);
 }
-
-.item-reviews {
-    font-size: 18px;
-    line-height: 21px;
-    color: #fff;
-}
 .item-reviews__message {
     position: relative;
     padding: 37px 20px;
@@ -1022,20 +1027,19 @@ h1 {
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-top: 20px solid #E2E2E2;
-   }
+}
 .item-reviews__person {
     margin: 66px 0 0 0;
 }
 .person-reviews {
     display: flex;
-    justify-content: space-between;
     color: #000;
 }
 .person-reviews__photo {
-    flex: 0 1 calc(70/370*100%);
+    flex: 0 1 calc(63/370*100%);
 }
 .person-reviews__characteristic {
-    flex: 0 1 calc(270/370*100%);
+    margin: 0 0 0 30px;
 }
 .person-reviews__name {
     padding: 10px 0;
@@ -1043,13 +1047,111 @@ h1 {
 .person-reviews__post {
     margin: 15px 0 0 0;
 }
+.reviews__points {
+    margin: 40px 0;
+    display: none;
+    justify-content: center;
+}
+.points-reviews__item {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #86878B;
+}
+.points-reviews__item:nth-child(2) {
+    margin: 0 75px;
+    background: #86878B;
+}
 
+@media (max-width: 1099.98px) {
+    .reviews__row {
+        margin: 32px 0 0 0;
+    }
+    .reviews__column {
+        flex: 0 1 calc(317/992*100%);
+    }
+    .item-reviews__message {
+        padding: 50px 20px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .item-reviews__message:after {
+        left: 60px; 
+    }
+    .person-reviews__photo {
+        flex: 0 1 calc(63/312*100%);        /* 312 так как скролл*/
+    }
+    .person-reviews__characteristic {
+        margin: 0 0 0 22px;
+    }
+    .person-reviews__name {
+        padding: 6px 0 5px 0;
+    }
+    .person-reviews__post {
+        margin: 10px 0 0 0;
+    }
+}
+@media (max-width: 1023.98px) {
+    .reviews__column {
+        flex: 0 1 calc(313/992*100%);
+    }
+}
+@media (max-width: 767.98px) {
+    .reviews__container {
+        padding: 0 16px;
+    }
+    .reviews__row {
+        justify-content: center;
+        margin: 24px 0 0 0;
+    }
+    .reviews__column:not(:nth-child(2)) {
+        display: none;
+    }
+    .reviews__column {
+        flex: 0 1 80%;
+        max-width: 400px;
+    }
+    .item-reviews__message {
+        padding: 50px 15px;
+    }
+    .reviews__points {
+        display: flex;
+    }
+}
+@media (max-width: 479.98px) {
+    .reviews__column {
+        flex: 0 1 90%;
+    }
+    .item-reviews__message:after {
+        left: 46px; 
+    }
+    .reviews__points {
+        margin: 32px 0;
+    }
+    .points-reviews__item {
+        width: 10px;
+        height: 10px;
+    }
+    .points-reviews__item:nth-child(2) {
+        margin: 0 50px;
+    }
+}
+@media (max-width: 399.98px) {
+    .reviews__column {
+        flex: 0 1 100%;
+    }
+    .person-reviews__photo {
+        flex: 0 1 calc(57/271*100%);
+    }
+}
 
 /*--------------- PICTURE ---------------*/
 
 .picture {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/picture.png');
-    background-size: auto, 100% 100%;
+    background-size: auto, 100% 120%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
 .picture__container {
     padding: 50px 16px 50px;
@@ -1067,6 +1169,42 @@ h1 {
     justify-content: center;
 }
 
+@media (max-width: 1199.98px) {
+    .picture {
+        background-size: auto, 100% 100%;
+    }
+    .picture__download {
+        margin: 32px 0 0 0;
+    }
+}
+@media (max-width: 767.98px) {
+    .picture {
+        background-size: auto, 120% 100%;
+    }
+    .picture__container {
+        padding: 0 16px 50px;
+    }
+}
+@media (max-width: 479.98px) {
+    .picture {
+        background-size: auto, 140% 100%;
+    }
+    .picture__download button {
+        height: 50px;
+    }
+}
+@media (max-width: 399.98px) {
+    .picture {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/picture2.png');
+        background-size: auto, 100% 100%;
+    }
+    .picture__download {
+        margin: 66px 0 0 0;
+    }
+    .picture__download button {
+        width: 100%;
+    }
+}
 /*--------------- CONTACT ---------------*/
 
 .contact__container {
