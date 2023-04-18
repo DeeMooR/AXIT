@@ -1007,12 +1007,10 @@ h1 {
     padding: 50px 16px 64px;
 }
 .reviews__row {
-    display: flex;
-    justify-content: space-between;
     margin: 83px 0 0 0;
 }
 .reviews__column {
-    flex: 0 1 calc(370/1170*100%);
+    margin: 0 0 60px 0;
 }
 .item-reviews__message {
     position: relative;
@@ -1053,29 +1051,21 @@ h1 {
 .person-reviews__post {
     margin: 15px 0 0 0;
 }
-.reviews__points {
-    margin: 40px 0;
-    display: none;
-    justify-content: center;
-}
-.points-reviews__item {
+
+.swiper-pagination-bullet {
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background: #fff;
-    border: 1px solid #86878B;
+    border: 2px solid #86878B;
 }
-.points-reviews__item:nth-child(2) {
-    margin: 0 75px;
-    background: #86878B;
+.swiper-pagination-bullet-active {
+    background-color: #86878B;
 }
 
 @media (max-width: 1099.98px) {
     .reviews__row {
         margin: 32px 0 0 0;
-    }
-    .reviews__column {
-        flex: 0 1 calc(317/992*100%);
     }
     .item-reviews__message {
         padding: 50px 20px;
@@ -1099,24 +1089,17 @@ h1 {
     }
 }
 @media (max-width: 1023.98px) {
-    .reviews__column {
-        flex: 0 1 calc(313/992*100%);
-    }
 }
 @media (max-width: 767.98px) {
     .reviews__container {
         padding: 0 16px;
     }
     .reviews__row {
-        justify-content: center;
         margin: 24px 0 0 0;
     }
-    .reviews__column:not(:nth-child(2)) {
-        display: none;
-    }
-    .reviews__column {
-        flex: 0 1 80%;
-        max-width: 400px;
+    .swiper {
+        width: 80%;
+        max-width: 500px;
     }
     .item-reviews__message {
         padding: 50px 15px;
@@ -1124,10 +1107,14 @@ h1 {
     .reviews__points {
         display: flex;
     }
+    .swiper-pagination:after {
+        width: 40px;
+        height: 40px;
+    }
 }
 @media (max-width: 479.98px) {
-    .reviews__column {
-        flex: 0 1 90%;
+    .swiper {
+        width: 90%;
     }
     .item-reviews__message:after {
         left: 46px; 
@@ -1144,8 +1131,8 @@ h1 {
     }
 }
 @media (max-width: 399.98px) {
-    .reviews__column {
-        flex: 0 1 100%;
+    .swiper {
+        width: 100%;
     }
     .person-reviews__photo {
         flex: 0 1 calc(57/271*100%);
@@ -1187,6 +1174,7 @@ h1 {
 }
 @media (max-width: 767.98px) {
     .picture {
+        margin: 31px 0 0 0;
         background-size: auto, 120% 100%;
     }
     .picture__container {
