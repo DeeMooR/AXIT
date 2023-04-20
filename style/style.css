@@ -555,7 +555,7 @@ h1 {
     display: flex;
     justify-content: space-between;
 }
-.media-right__list a {
+.media-right__list li {
     flex: 0 1 calc(70/670*100%);
 }
 .media-right__list img {
@@ -578,7 +578,7 @@ h1 {
         padding: 25px 0 0 0;
         flex: 0 1 calc(570/992*100%);
     }
-    .media-right__list a {
+    .media-right__list li {
         flex: 0 1 calc(64/560*100%);
     }
 }
@@ -590,7 +590,7 @@ h1 {
         padding: 28px 0 0 0;
         flex: 0 1 calc(451/736*100%);
     }
-    .media-right__list a {
+    .media-right__list li {
         flex: 0 1 calc(50/451*100%);
     }
 }
@@ -618,7 +618,7 @@ h1 {
         padding: 0 0 44px 0;
         width: 80%;
     }
-    .media-right__list a {
+    .media-right__list li {
         flex: 0 1 10%;
     }
 }
@@ -638,7 +638,7 @@ h1 {
         padding: 0 0 44px 0;
         width: 100%;
     }
-    .media-right__list a {
+    .media-right__list li {
         flex: 0 1 calc(26/271*100%);
     }
 }
@@ -1142,6 +1142,12 @@ h1 {
 .swiper-pagination-bullet-active {
     background-color: #86878B;
 }
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin-right: 50px;
+}
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:last-child {
+    margin-right: 0;
+}
 
 @media (max-width: 1099.98px) {
     .reviews__row {
@@ -1378,7 +1384,7 @@ footer {
     display: flex;
     justify-content: space-between;
 }
-.footer__list a {
+.footer__list li {
     flex: 0 1 calc(53/570*100%);
 }
 .footer__list img {
@@ -1400,7 +1406,7 @@ footer {
     .footer__list {
         max-width: 477px;
     }
-    .footer__list a {
+    .footer__list li {
         flex: 0 1 calc(45/477*100%);
     }
     .footer__text {
@@ -1418,7 +1424,7 @@ footer {
     .footer__container {
         padding: 35px 16px 45px;
     }
-    .footer__list a {
+    .footer__list li {
         flex: 0 1 calc(26/288*100%);
     }
     .footer__text {
